@@ -97,7 +97,7 @@ export default function Dashboard() {
           {timeline.map((item, index) => (
             <div
               key={index}
-              className="relative rounded-lg bg-[#1F2029] p-4 flex flex-col justify-between items-start h-auto md:h-[120px] md:w-[200px] lg:h-[150px] lg:w-[200px]"
+              className="relative rounded-lg bg-[#1F2029] p-4 flex flex-col justify-between items-center h-auto md:h-[120px] md:w-[200px] lg:h-[150px] lg:w-[200px] sm:justify-center"
             >
               <div
                 className={`w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full ${
@@ -125,17 +125,17 @@ export default function Dashboard() {
 
               {/* Text and Span Section */}
               <div className="mt-2">
-                <p className="text-white text-xs md:text-sm">
+                <p className="text-white text-xs md:text-sm items-center">
                   {item.display_name}
                 </p>
               </div>
 
-              <div className="flex items-center justify-between mt-2 w-full">
-                <h2 className="text-xl md:text-2xl font-bold text-white">
+              <div className="flex items-center md:justify-between lg:justify-between mt-2 w-full justify-center">
+                <div className="text-xl md:text-2xl font-bold text-white items-center">
                   {item.span}
-                </h2>
-                <div className="flex items-center space-x-2">
-                  <item.arrow className="w-3 h-3 md:w-3 md:h-3 text-white" />
+                </div>
+                <div className="flex items-center space-x-1">
+                  <item.arrow className="w-3 h-3 md:w-3 md:h-3 text-white " />
                   <span
                     className={`text-[10px] md:text-base ${
                       item.icon === ShoppingBag
