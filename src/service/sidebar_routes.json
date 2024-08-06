@@ -1,0 +1,26 @@
+[
+  {
+    "display_name": "Dashboard",
+    "route": "/home",
+    "icon": "Home",
+    "span": "Dasaboard"
+  },
+  {
+    "display_name": "Cart",
+    "route": "/",
+    "icon": "ShoppingBag",
+    "span": "Cart"
+  },
+  {
+    "display_name": "Notes",
+    "route": "/",
+    "icon": "Clipboard",
+    "span": "Notes"
+  },
+  {
+    "display_name": "Wallet",
+    "route": "/",
+    "icon": "Wallet",
+    "span": "Wallet"
+  }
+]
